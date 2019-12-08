@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Layout</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <link rel='icon' href=https://i.pinimg.com/originals/88/84/f5/8884f50dd923182c042a485a0f421996.jpg type=image/telescope.jpg >
+       <style>
+           @import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text|Sulphur+Point&display=swap');
+        body{
+            background-color:whitesmoke;
+        }
+        h1{
+           color:gray;
+           font-size:4.5em;
+           float: place;
+           font-family:'Big Shoulders Text', cursive;
+        }
+        h2{
+           color:gray;
+           font-size:3em;
+           font-family:'Big Shoulders Text', cursive;
+        }
+        h3{
+            color:gray;
+            font-size:2.5em;
+            text-align:center;
+            font-family:'Big Shoulders Text', cursive;
+        }
+        h4{
+            color:gray;
+            font-size:1.5em;
+            text-align:left;
+            font-family:'Big Shoulders Text', cursive;
+        }
+        p{
+            color:lightslategray;
+            font-size:1.5em;
+            font-family:'Sulphur Point', sans-serif;
+        }
+           div.ex1 {
+                background-color: red;
+                color: lightslategray;
+                width: 110px;
+                height: 110px;
+                overflow: scroll;
+            }
+            div.ex2 {
+                background-color: red;
+                color: lightslategray;
+                width: 110px;
+                height: 110px;
+                overflow: hidden;
+            }
+
+            div.ex3 {
+                background-color: red;
+                color: lightslategray;
+                width: 110px;
+                height: 110px;
+                overflow: auto;
+            }
+
+            div.ex4 {
+                background-color: red;
+                color:lightslategray;
+                width: 110px;
+                height: 110px;
+                overflow: visible;
+            }
+            div.relative {
+                position: relative;
+                left: 30px;
+                border: 3px solid #73AD21;
+            }
+            div.fixed {
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                width: 300px;
+                border: 3px solid #73AD21;
+            }
+            div.relative2 {
+                position: relative;
+                width: 400px;
+                height: 200px;
+                border: 3px solid #73AD21;
+            } 
+
+            div.absolute {
+                position: absolute;
+                top: 80px;
+                right: 0;
+                width: 200px;
+                height: 100px;
+                border: 3px solid #73AD21;
+            }
+            img {
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                z-index: -1;
+            }
+            #img2{
+                position: absolute;
+                left: 0px;
+                top: 352%;
+                z-index: -1;
+            }
+            .div1clear {
+                float: left;
+                width: 100px;
+                height: 50px;
+                margin: 10px;
+                border: 3px solid #73AD21;
+            }
+
+            .div2clear {
+                border: 1px solid red;
+            }
+            .div3clear {
+                float: left;
+                width: 100px;
+                height: 50px;
+                margin: 10px;
+                border: 3px solid #73AD21;
+            }
+            .div4clear {
+                border: 1px solid red;
+                clear: left;
+            }
+            li{
+                color:lightslategray;
+                font-family:'Sulphur Point', sans-serif;
+                font-size:1.5em;
+            }    
+            #img3{
+                float: right;
+                position:relative;
+            }  
+            .box_model{
+                background-color: lightgrey;
+                width: 300px;
+                border: 15px solid green;
+                padding: 50px;
+                margin: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+            <div class="navbar">
+                    <div class="titlebar"><img src="images/telescopemenu.png" width="7%" style="padding-left:5px;float:left;padding: 14px 16px;"><p style="font-size:16px;color:white;float:left;margin-top:12px"><strong><span id="titlemenu">Astronomy</span></strong><br><em>Go further the sky, further limits</em></p>     
+                    
+                    <div class="optionbar1"><a href="index.html">Main Page</a></div>
+                    <div class="subnav">
+                      <button class="subnavbtn">Other Pages <i class="fa fa-caret-down"></i></button>
+                      <div class="subnav-content">
+                        <a href="basics.html">Basics HTML and CSS</a>
+                        <a href="more_html_tags.html">More HTML Tags</a>
+                        <a href="css_text_properties.html">CSS Text Properties</a>
+                        <a href="css_layout.html">CSS Layout</a>
+                        <a href="more_css_selectors.html">More CSS Selectors</a>
+                        <a href="other_ways_to_embed_css.html">Other Ways To Embed CSS</a>
+                        <a href="further_learning.html">Further Learning</a>
+                        <a href="web_development_tools.html">Web Development Tools</a>
+                      </div>
+                    </div> 
+                    <div class="optionbar2"><a href="enrique_website_document.pdf">Download PDF File</a></div>
+                    </div>
+                </div>
+                
+        <h1>CSS Layout</h1>
+
+        <h2>Span</h2>
+
+            <p>The "span" tag is used to group inline-elements in a document. The "span" tag provides no visual change by itself. The "span" tag provides a way to add a hook to a part of a text or a part of a document.</p>
+            <p>Example: My mother has <span style="color:blue">blue</span> eyes.</p>  
+            
+        <h2>Div</h2>
+
+            <p>The "div" tag defines a division or a section in an HTML document. The "div" element is often used as a container for other HTML elements to style them with CSS or to perform certain tasks with JavaScript.</p>
+            <p>Example: <div style="background-color:lightblue">
+                    <h3>This is a heading</h3>
+                    <p>This is a paragraph.</p>
+                  </div></p>
+
+        <h2>Overflow</h2>
+
+            <p>The overflow property specifies what should happen if content overflows an element's box. This property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area.</p>
+            <p>Example:<h3>The overflow Property</h3>
+
+                <p>The overflow property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area.</p>
+                
+                <h4>overflow: scroll:</h4>
+                <div class="ex1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+                
+                <h4>overflow: hidden:</h4>
+                <div class="ex2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+                
+                <h4>overflow: auto:</h4>
+                <div class="ex3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+                
+                <h4>overflow: visible (default):</h4>
+                <div class="ex4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+                </p>
+
+        <h2>Box model: content, padding, border, margin</h2>
+            <div class="box_model"><p>This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border.</p></div>
+
+        <h2>Positioning: relative, absolute, fixed y z-index</h2>
+            <h3>Relative</h3>
+                <p>An element with position: relative; is positioned relative to its normal position. Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.</p>
+                <p>Example:</p>
+                    <div class="relative"><p>This div element has position: relative;</p></div>
+
+            <h3>Fixed</h3>
+                <p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element. A fixed element does not leave a gap in the page where it would normally have been located.</p>
+                <p>Example:</p>
+                    <div class="fixed"><p>This div element has position: fixed;</p></div>
+
+            <h3>Absolute</h3>
+                <p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.</p>
+                <p>Example:</p>
+                    <div class="relative2"><p>This div element has position: relative;</p>
+                        <div class="absolute"><p>This div element has position: absolute;</p></div></div>
+
+            <h3>Overlapping Elements (z-index)</h3>
+                    <p>When elements are positioned, they can overlap other elements. The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others). An element can have a positive or negative stack order:</p>
+                    <h4>This is a heading</h4>
+                    <img id="img2" src="images/w3css.png" width="100" height="140">
+                    <p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+
+        <h2>Float, clear</h2>
+            <h3>Float</h3>
+                <p>The float property is used for positioning and formatting content e.g. let an image float left to the text in a container. The float property can have one of the following values:</p>
+                        
+                    <ul><li>left - The element floats to the left of its container</li>
+                        <li>right - The element floats to the right of its container</li>
+                        <li>none - The element does not float (will be displayed just where it occurs in the text). This is default</li>
+                        <li>inherit - The element inherits the float value of its parent</li>
+                    </ul>
+                        <p>In its simplest use, the float property can be used to wrap text around images.</p>
+                <p>Example:</p>
+                    <img id="img3" src="images/pineapple.jpg" width="170px" height="170px"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+
+            <h3>Clear</h3>
+                <p>The clear property specifies what elements can float beside the cleared element and on which side. The clear property can have one of the following values:</p>
+                <ul>
+                    <li>none - Allows floating elements on both sides. This is default</li>
+                    <li>left - No floating elements allowed on the left side</li>
+                    <li>right- No floating elements allowed on the right side</li>
+                    <li>both - No floating elements allowed on either the left or the right side</li>
+                    <li>inherit - The element inherits the clear value of its parent</li>
+                </ul>
+                <p>The most common way to use the clear property is after you have used a float property on an element.</p>
+                <p>Example:</p>
+                <h4>Without clear</h4>
+                <div class="div1clear"><p>div1</p></div>
+                <div class="div2clear"><p>div2 - Notice that div2 is after div1 in the HTML code. However, since div1 floats to the left, the text in div2 flows around div1.</p></div>
+                <br><br>
+                
+                <h4>With clear</h4>
+                <div class="div3clear"><p>div3</p></div>
+                <div class="div4clear"><p>div4 - Here, clear: left; moves div4 down below the floating div3. The value "left" clears elements floated to the left. You can also clear "right" and "both".</p></div>
+                
+
+    </body>

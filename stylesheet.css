@@ -1,0 +1,218 @@
+        @import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text|Sulphur+Point&display=swap');
+        
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            background-color:whitesmoke;
+            width: 100%;
+        }
+        h1{
+           color:gray;
+           font-size:4.5em;
+           float: place;
+           font-family:'Big Shoulders Text', cursive;
+        }
+        h2{
+           color:gray;
+           font-size:3em;
+           font-family:'Big Shoulders Text', cursive;
+        }
+        h3{
+            color:gray;
+            font-size:2.5em;
+            text-align:center;
+            font-family:'Big Shoulders Text', cursive;
+        }
+        p{
+            color:lightslategray;
+            font-size:1.5em;
+            font-family:'Sulphur Point', sans-serif;
+        }
+        #img1{
+            width: 850px;
+            margin-left:270px
+        }
+        #div4{
+            width:1200px;
+            margin:auto;
+        }
+        #img2{
+            float:left;
+            padding:10px;
+        }
+        #img3{
+            position:relative;
+            padding-right:20px;
+            padding-left:18px;
+
+        }
+        #img4{
+            position:relative;
+        }
+        #img5{
+            background-color:lightseagreen;
+            padding-top:20px;
+        }
+        #img6{
+            margin-left:95px;
+            margin-right:150px;
+        }
+        #DivIntro{
+            width:1400px;
+            margin:auto;
+        }
+        #div1{
+            width:1400px;
+            margin:auto;
+        }
+        #div2{
+            width:1400px;
+            margin:auto;
+        }
+        #div3{
+            width:1400px;
+            margin:auto;
+        }
+        #div3extra{
+            width:90%;
+            height:800px;
+            margin:auto;
+            overflow-y:auto;
+            border:3px dashed lightslategray;
+            padding-left:15px;
+            padding-right:20px;
+            padding-bottom:5px;
+        }
+        table {
+            width:100%;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+        table#t01 tr:nth-child(even) {
+            background-color: #eee;
+            color:black;
+        }
+        table#t01 tr:nth-child(odd) {
+            background-color: #fff;
+            color:black;
+        }
+        table#t01 th {
+            background-color: aliceblue;
+            color: lightslategray;
+        }
+        #CSSPROP_EX0{
+            font-family: monospace;
+        }
+        #CSSPROP_EX1{
+            font-family: "Times New Roman", serif;;
+        }
+        #CSSPROP_EX2{
+            font-size: 4em;
+        }
+        #CSSPROP_EX3{
+            font-size: 10px;
+        }
+        #CSSPROP_EX4{
+            font-style: italic;
+        }
+        #CSSPROP_EX5{
+            line-height: 20px;
+        }
+        #CSSPROP_EX6{
+            text-align: center;
+        }
+        #CSSPROP_EX7{
+            text-decoration: underline overline dotted red;
+        }
+        li{
+            color:lightslategray;
+            font-size:1.5em;
+            font-family:'Sulphur Point', sans-serif;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            font-family:'Sulphur Point', sans-serif;
+        }
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-family:'Sulphur Point', sans-serif;   
+        }
+        .subnav {
+            float: left;
+            overflow: hidden;
+            margin-top:12px;
+            font-family:'Sulphur Point', sans-serif;        
+        }
+        .subnav .subnavbtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 50px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+            font-family:'Sulphur Point', sans-serif;     
+        }
+        .navbar a:hover, .subnav:hover .subnavbtn {
+            background-color: red;
+            font-family:'Sulphur Point', sans-serif;      
+        }
+        .subnav-content {
+            display: none;
+            position: absolute;
+            left: 0;
+            background-color: red;
+            width: 100%;
+            z-index: 1;
+            font-family:'Sulphur Point', sans-serif;          
+        }
+        .subnav-content a {
+            float: left;
+            color: white;
+            text-decoration: none;
+            font-family:'Sulphur Point', sans-serif;   
+        }
+        .subnav-content a:hover {
+            background-color: #eee;
+            color: black;
+            font-family:'Sulphur Point', sans-serif;   
+        }
+        .subnav:hover .subnav-content {
+            display: block;
+            font-family:'Sulphur Point', sans-serif;  
+        }
+        .titlebar{
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+            font-family:'Sulphur Point', sans-serif;
+        }
+        .optionbar1{
+            float:left;
+            margin-top:12px;
+            margin-left:25%;
+            font-family:'Sulphur Point', sans-serif;
+        }
+        .optionbar2{
+            margin-top:12px;
+            font-family:'Sulphur Point', sans-serif;      
+        }
+        #titlemenu{
+            font-size:130%;
+            font-family:'Sulphur Point', sans-serif; 
+        }

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Text Properties</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <link rel='icon' href=https://i.pinimg.com/originals/88/84/f5/8884f50dd923182c042a485a0f421996.jpg type=image/telescope.jpg >
+        <style>
+        @import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text|Sulphur+Point&display=swap');
+        body{
+            background-color:whitesmoke;
+        }
+        h1{
+           color:gray;
+           font-size:4.5em;
+           float: place;
+           font-family:'Big Shoulders Text', cursive;
+        }
+        h2{
+           color:gray;
+           font-size:3em;
+           font-family:'Big Shoulders Text', cursive;
+        }
+        h3{
+            color:gray;
+            font-size:2.5em;
+            text-align:center;
+            font-family:'Big Shoulders Text', cursive;
+        }
+        p{
+            color:lightslategray;
+            font-size:1.5em;
+            font-family:'Sulphur Point', sans-serif;
+        }
+        #CSSPROP_EX0{
+            font-family: monospace;
+        }
+        #CSSPROP_EX1{
+            font-family: "Times New Roman", serif;;
+        }
+        #CSSPROP_EX2{
+            font-size: 4em;
+        }
+        #CSSPROP_EX3{
+            font-size: 10px;
+        }
+        #CSSPROP_EX4{
+            font-style: italic;
+        }
+        .CSSPROP_EX5-1{
+            line-height: 1;
+            background-color:aqua;
+        }
+        .CSSPROP_EX5-2{
+            line-height: 3;
+            background-color:aqua;
+        }
+        #CSSPROP_EX6{
+            text-align: center;
+        }
+        #CSSPROP_EX7{
+            text-decoration: underline overline dotted red;
+        }
+        .li_extra{
+            color:lightslategray;
+            font-family:'Sulphur Point', sans-serif;
+            font-size:1.5em;
+         }
+        </style>
+       
+    </head>
+
+    <body>
+            <div class="navbar">
+                    <div class="titlebar"><img src="images/telescopemenu.png" width="7%" style="padding-left:5px;float:left;padding: 14px 16px;"><p style="font-size:16px;color:white;float:left;margin-top:12px"><strong><span id="titlemenu">Astronomy</span></strong><br><em>Go further the sky, further limits</em></p>     
+                    
+                    <div class="optionbar1"><a href="index.html">Main Page</a></div>
+                    <div class="subnav">
+                      <button class="subnavbtn">Other Pages <i class="fa fa-caret-down"></i></button>
+                      <div class="subnav-content">
+                        <a href="basics.html">Basics HTML and CSS</a>
+                        <a href="more_html_tags.html">More HTML Tags</a>
+                        <a href="css_text_properties.html">CSS Text Properties</a>
+                        <a href="css_layout.html">CSS Layout</a>
+                        <a href="more_css_selectors.html">More CSS Selectors</a>
+                        <a href="other_ways_to_embed_css.html">Other Ways To Embed CSS</a>
+                        <a href="further_learning.html">Further Learning</a>
+                        <a href="web_development_tools.html">Web Development Tools</a>
+                      </div>
+                    </div> 
+                    <div class="optionbar2"><a href="enrique_website_document.pdf">Download PDF File</a></div>
+                    </div>
+                </div>
+                
+        <h1>CSS Text Properties</h1>
+
+        <h2>Generic Font Family</h2>
+            <p>There are different types: "serif", "sans-serif", "cursive", "fantasy", "monospace".</p>
+            <p>For adding one, type the following inside the item style in the style tag:<br>
+            font-family: generic_font_name;</p>
+            <p>Example: <span id="CSSPROP_EX0">Hello World</span></p>
+
+        <h2>Specific Font Family</h2>
+            <p>There are different types: "times", "courier", "arial", etc.</p>
+            <p>For adding one, type the following inside the item style in the style tag:<br>
+            font-family: "specific_font_name", generic_font_name;</p>
+            <p>Example: <span id="CSSPROP_EX1">Hello World</span></p>
+
+        <h2>font-size</h2>
+            <p>font-size allows you to change the size of the text, there are different ways, 2 of them are "em" and "px".</p>
+            <ul>
+                <li class="li_extra">em (include inside the item you want to style in the style tag):<br>
+                    font-size: Amount_em;<br
+                    >Example: <span id="CSSPROP_EX2">Hello world</span></li>
+                <li class="li_extra">px (include inside the item you want to style in the style tag):<br>
+                    font-size:Amount_px;<br>
+                    Example: <span id="CSSPROP_EX3">Hello world</span></li>
+            </ul>
+        
+        <h2>font-style</h2>
+           <p>It lets you include text with different styles, like italic. (font-style: italic;)</p>
+           <p>Example: <span id="CSSPROP_EX4">Hello world</span></p>
+
+        <h2>line-height</h2>
+            <p>Set the line height for different "div" elements. (line-height: Amount_unit;)</p>
+            <p>Example:</p><div><p class="CSSPROP_EX5-1">Hello world</p></div>
+                <div><p class="CSSPROP_EX5-2">Hello world</p></div>
+            <p>2 Divs with different line-height.</p>
+
+        <h2>text-align</h2>
+            <p>The text-align property specifies the horizontal alignment of text in an element. (text-align: position;)</p>
+            <p>Example:</p><p id="CSSPROP_EX6">Hello world</p>
+
+        <h2>text-decoration</h2>
+                <p>The text-decoration property specifies the decoration added to text, and is a shorthand property for:</p>
+                    <ul>
+                        <li class="li_extra">text-decoration-line (required)</li>
+                        <li class="li_extra">text-decoration-color</li>
+                        <li class="li_extra">text-decoration-style</li>
+                    </ul>
+                    <p>Example: <span id="CSSPROP_EX7">Hello world</span></p>
+    </body>
